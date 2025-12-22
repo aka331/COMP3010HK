@@ -8,14 +8,14 @@ This repo contains my CW1 PCAP investigation deliverables: identifying the infec
 
 ## Key Findings (IOCs)
 - Victim host: `10.9.23.102` 
-- Initial malicious download (UTC): `2021-09-24 164438` 
+- Initial malicious download (UTC): `2021-09-24 16:44:38` 
 - Downloaded archive: `documents.zip` from `attirenepal.com` 
-- File inside archive: `chart-1530076591.xls` [file:1]
+- File inside archive: `chart-1530076591.xls`
 - Additional domains (164511–164530 UTC): `finejewels.com.au`, `thietbiagt.com`, `new.americold.com`
 - Suspected C2 IPs: `185.106.96.158`, `185.125.204.174` 
 - C2 domains/headers observed: `survmeter.live`, `securitybusinpuff.com`, `ocsp.verisign.com`
 - Post-infection domain: `maldivehost.net` (data prefix `zLIisQRWZI9`, first packet length `281`) 
-- External IP check: `api.ipify.org` at `2021-09-24 170004`
+- External IP check: `api.ipify.org` at `2021-09-24 17:00:04`
 - SMTP evidence: MAIL FROM `farshinmailfa.com`, recovered password `13691369`
 
 ## AI Use Declaration
