@@ -13,7 +13,7 @@ COMP3010HK/
 ├── CW1/                           # Coursework 1 (PCAP Incident Analysis)
 │   ├── Capture/                   # PCAP / extracted artifacts (if included)
 │   ├── Quiz_Analysis/             # CW1 quiz answers + notes
-│   ├── Report/                    # CW1 written report (PDF/MD)
+│   ├── Report/                    # CW1 written report (PDF)
 │   └── README.md                  # CW1 overview / navigation
 │
 ├── CW2/                           # Coursework 2 (BOTSv3 Splunk Investigation)
