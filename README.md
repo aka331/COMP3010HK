@@ -7,17 +7,24 @@ It includes:
 - **Coursework 2 – BOTSv3 Splunk Investigation**: SOC-style log analysis in Splunk using the BOTSv3 dataset, with a written report and recorded presentation.
 
 ## Repository Structure
-├── CW1/
-│ ├── Capture/
-│ ├── Quiz_Analysis/
-│ ├──  Report/
-│ └── README.md/
-├── CW2/
-│ ├── Capture/
-│ ├── spl_queries/
-│ └── README.md/
-└── LICENSE
-└── README.md
+
+```text
+COMP3010HK/
+├── CW1/                           # Coursework 1 (PCAP Incident Analysis)
+│   ├── Capture/                   # PCAP / extracted artifacts (if included)
+│   ├── Quiz_Analysis/             # CW1 quiz answers + notes
+│   ├── Report/                    # CW1 written report (PDF/MD)
+│   └── README.md                  # CW1 overview / navigation
+│
+├── CW2/                           # Coursework 2 (BOTSv3 Splunk Investigation)
+│   ├── Capture/                   # Evidence screenshots / exports
+│   ├── spl_queries/               # Saved SPL searches / notes
+│   └── README.md                  # CW2 report (main deliverable)
+│
+├── LICENSE
+└── README.md                      # Repository overview (this file)
+```
+
 
 The aim is to demonstrate practical skills in incident detection, investigation, and reporting using realistic datasets and SOC tooling.
 
