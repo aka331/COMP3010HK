@@ -3,8 +3,10 @@ COMP3010 Security Operations and Incident Management - CW1
 This repo contains my CW1 PCAP investigation deliverables: identifying the infected host, reconstructing the infection vector, and summarising C2/exfil behaviour using Wireshark evidence.
 
 ## Contents
-- `CW1_Documentation/` — CW1 report (PDF).
 - `Capture/` — Screenshots (filters, TCP streams, Export Objects, Conversations, DNS/TLS, SMTP).
+- `Quiz_Analysis/` — CW1 Quiz (PDF).
+- `Report/` — CW1 report (PDF).
+
 
 ## Key Findings (IOCs)
 - Victim host: `10.9.23.102` 
