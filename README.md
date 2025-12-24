@@ -1,6 +1,25 @@
-# COMP3010HK — Security Operations & Incident Management (Coursework Repository)
+# COMP3010HK – Security Operations & Incident Management
 
-This repository contains my **COMP3010HK** coursework artifacts for:
+This repository contains assessed work for the COMP3010HK Security Operations and Incident Management module at the University of Plymouth.
 
-- **CW1 (30%)** — PCAP Intrusion Analysis: quiz answers + a ~1000-word incident write-up with evidence  
-- **CW2 (70%)** — Splunk BOTSv3 Incident Analysis: **README.md as a professional report**, plus a **≤10 min video**, and evidence of continuous improvement via commi
+It includes:
+- **Coursework 1 – PCAP Incident Analysis**: Network forensics on a captured intrusion, with an incident report and supporting evidence.
+- **Coursework 2 – BOTSv3 Splunk Investigation**: SOC-style log analysis in Splunk using the BOTSv3 dataset, with a written report and recorded presentation.
+
+## Repository Structure
+├── CW1/
+│ ├── Capture/
+│ ├── Quiz_Analysis/
+│ ├──  Report/
+│ └── README.md/
+├── CW2/
+│ ├── Capture/
+│ ├── spl_queries/
+│ └── README.md/
+└── LICENSE
+└── README.md
+
+The aim is to demonstrate practical skills in incident detection, investigation, and reporting using realistic datasets and SOC tooling.
+
+Any use of generative AI is documented in the accompanying Generative AI Declaration, in line with module requirements.
+
