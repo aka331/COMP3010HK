@@ -6,6 +6,7 @@ This repo contains my CW1 PCAP investigation deliverables: identifying the infec
 - `Capture/` — Screenshots (filters, TCP streams, Export Objects, Conversations, DNS/TLS, SMTP).
 - `Quiz_Analysis/` — CW1 Quiz (PDF).
 - `Report/` — CW1 report (PDF).
+- `event_alert.csv` — The alert output from ZUI.
 
 
 ## Key Findings (IOCs)
