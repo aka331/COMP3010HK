@@ -2,6 +2,8 @@
 COMP3010 Security Operations and Incident Management - CW1
 This repo contains my CW1 PCAP investigation deliverables: identifying the infected host, reconstructing the infection vector, and summarising C2/exfil behaviour using Wireshark evidence.
 
+Youtube: [CW1](https://www.youtube.com/watch?v=zNpOEBTWsNA)
+
 ## Contents
 - `Capture/` — Screenshots (filters, TCP streams, Export Objects, Conversations, DNS/TLS, SMTP).
 - `Quiz_Analysis/` — CW1 Quiz (PDF).
