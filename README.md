@@ -18,7 +18,7 @@ COMP3010HK/
 │
 ├── CW2/                           # Coursework 2 (BOTSv3 Splunk Investigation)
 │   ├── Capture/                   # Evidence screenshots / exports
-│   ├── spl_queries/               # Saved SPL searches / notes
+│   ├── Report/                    # CW1 written report (PDF)
 │   └── README.md                  # CW2 report (main deliverable)
 │
 ├── LICENSE
