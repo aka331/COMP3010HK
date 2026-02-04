@@ -8,64 +8,20 @@
 > **Tooling:** Splunk Enterprise on Ubuntu VM  
 > **Video (≤10 mins):** [YouTube link here]  
 
+---
 
 ## Table of Contents
+1. [Introduction](#10-introduction)
+2. [SOC Roles & Incident Handling Reflection](#20-soc-roles--incident-handling-reflection)
+3. [Installation & Data Preparation](#30-installation--data-preparation)
+4. [Investigation](#40-investigation)
+5. [Conclusion](#50-conclusion)
+6. [Reference](#60-reference)
 
-[**1.0 Introduction	2**](#1.0-introduction)
-
-[**2.0 SOC Roles & Incident Handling Reflection	3**](#2.0-soc-roles-&-incident-handling-reflection)
-
-[2.1 SOC Roles	3](#2.1-soc-roles)
-
-[2.1.1 Tier 1 (T1) — Monitoring & Triage	3](#2.1.1-tier-1-\(t1\)-—-monitoring-&-triage)
-
-[2.1.2 Tier 2 (T2) — Investigation & Scoping	3](#2.1.2-tier-2-\(t2\)-—-investigation-&-scoping)
-
-[2.1.3 Tier 3 (T3) — Threat Hunting & Detection Engineering	4](#2.1.3-tier-3-\(t3\)-—-threat-hunting-&-detection-engineering)
-
-[2.1.4 SOC department head	4](#2.1.4-soc-manager-/-soc-lead)
-
-[2.2 Incident Handling Reflection	5](#2.2-incident-handling-reflection)
-
-[2.2.1 Prevention	5](#heading=h.tcd6d41mha99)
-
-[2.2.2 Detection	6](#heading=h.tcoritbtz977)
-
-[2.2.3 Response	6](#heading=h.oc3ls94jvcyy)
-
-[2.2.4 Recovery	6](#heading=h.ohvrszcvr8ge)
-
-[**3.0 Installation & Data Preparation	7**](#3.0-installation-&-data-preparation)
-
-[3.1 Environment Setup	7](#3.1-environment-setup)
-
-[3.2 Dataset Ingestion	8](#3.2-dataset-ingestion)
-
-[**4.0 Investigation	11**](#4.0-investigation)
-
-[4.1 Key Findings	11](#4.1-key-findings)
-
-[4.2 Splunk Analysis & Evidence	12](#4.2-splunk-analysis-&-evidence)
-
-[4.2.1 IAM User Enumeration	12](#4.2.1-iam-user-enumeration)
-
-[4.2.2 MFA Alerting Logic	14](#4.2.2-mfa-alerting-logic)
-
-[4.2.3 Web Server Hardware Identification	16](#4.2.3-web-server-hardware-identification)
-
-[4.2.4 S3 Public Access Incident	17](#4.2.4-s3-public-access-incident)
-
-[4.2.5 Suspicious File Upload	19](#4.2.5-suspicious-file-upload)
-
-[4.2.6 Endpoint Outlier Detection	21](#4.2.6-endpoint-outlier-detection)
-
-[**5.0 Conclusion	24**](#5.0-conclusion)
-
-[6.0 Reference	25](#6.0-reference)
+---
 
 
-
-# **1.0 Introduction** {#1.0-introduction}
+# 1.0 Introduction
 
 This report investigates AWS and endpoint-related activity in the BOTSv3 dataset using Splunk. Also, it will answer a set of 200-level guiding questions and use the results to derive practical detection logic and event-handling insights relevant to SOC operations. For the scope that is limited to suspected IAM misuse involving the Frothly environment, potential S3 bucket misconfigurations and file access, and abnormal conditions on critical endpoints. All other BOTSv3 scenarios and non-AWS sources are excluded.
 
@@ -80,7 +36,7 @@ Depending on scale and operational needs, SOC functions may be handled by a sing
 
 ---
 
-# **2.0 SOC Roles & Incident Handling Reflection** {#2.0-soc-roles-&-incident-handling-reflection}
+# 2.0 SOC Roles & Incident Handling Reflection
 
 ## **2.1 SOC Roles** {#2.1-soc-roles}
 
@@ -135,7 +91,7 @@ Previous incident response life cycle model
 
 ---
 
-# **3.0 Installation & Data Preparation** {#3.0-installation-&-data-preparation}
+# 3.0 Installation & Data Preparation
 
 ## **3.1 Environment Setup** {#3.1-environment-setup}
 
@@ -202,7 +158,7 @@ Fig 5\. Screenshot of validating the BOTSv3 data availability
 
 ---
 
-# **4.0 Investigation** {#4.0-investigation}
+# 4.0 Investigation
 
 This section details the investigation of unauthorized IAM activity and S3 bucket compromise within the Frothly AWS environment. The analysis uses Splunk to identify the attacker, the method of compromise, and the extent of data exposure.
 
@@ -391,7 +347,7 @@ BSTOLL-L.froth.ly
 
 # 
 
-# **5.0 Conclusion** {#5.0-conclusion}
+# 5.0 Conclusion
 
 The investigation successfully identified a critical data exposure incident caused by a misconfigured S3 ACL on the frothlywebcode bucket. The breach, initiated by user bstoll from the endpoint BSTOLL-L.froth.ly, allowed unauthorized public access and resulted in the upload of OPEN\_BUCKET\_PLEASE\_FIX.txt.
 
@@ -403,7 +359,7 @@ Key Recommendations:
 
 # 
 
-# **6.0 Reference** {#6.0-reference}
+# 6.0 Reference
 
 1. Cloudflare. (n.d.). What is a security operations center (SOC)? [https://www.cloudflare.com/zh-tw/learning/security/glossary/what-is-a-security-operations-center-soc/](https://www.cloudflare.com/zh-tw/learning/security/glossary/what-is-a-security-operations-center-soc/) 
 
