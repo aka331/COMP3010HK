@@ -1,7 +1,14 @@
-COMP3010HK Security Operations and Incident Management 2025/2026  
-Coursework 2: BOTSv3 Incident Analysis and Presentation
+# COMP3010HK (CW2) — BOTSv3 Incident Analysis (Splunk) 
 
-Github repo: [https://github.com/aka331/COMP3010HK/tree/main/CW2](https://github.com/aka331/COMP3010HK/tree/main/CW2) 
+---
+
+> **Module:** COMP3010HK Security Operations & Incident Management  
+> **Coursework:** CW2 (BOTSv3 Incident Analysis + Presentation)  
+> **Dataset:** Boss of the SOC v3 (BOTSv3)  
+> **Tooling:** Splunk Enterprise on Ubuntu VM  
+> **Video (≤10 mins):** [YouTube link here]  
+
+---
 
 **Table of Contents**
 
@@ -59,6 +66,8 @@ Github repo: [https://github.com/aka331/COMP3010HK/tree/main/CW2](https://github
 
 # 
 
+---
+
 # **1.0 Introduction** {#1.0-introduction}
 
 This report investigates AWS and endpoint-related activity in the BOTSv3 dataset using Splunk. Also, it will answer a set of 200-level guiding questions and use the results to derive practical detection logic and event-handling insights relevant to SOC operations. For the scope that is limited to suspected IAM misuse involving the Frothly environment, potential S3 bucket misconfigurations and file access, and abnormal conditions on critical endpoints. All other BOTSv3 scenarios and non-AWS sources are excluded.
@@ -71,6 +80,8 @@ A Security Operations Center (SOC) is responsible for continuous monitoring, det
 (3) supporting compliance while improving the organization’s security posture. 
 
 Depending on scale and operational needs, SOC functions may be handled by a single internal team, distributed global teams (GSOCs), or outsourced providers.
+
+---
 
 # **2.0 SOC Roles & Incident Handling Reflection** {#2.0-soc-roles-&-incident-handling-reflection}
 
@@ -124,6 +135,8 @@ Previous incident response life cycle model
 | Recovery (Eradication and Recovery) |  |
 
 # 
+
+---
 
 # **3.0 Installation & Data Preparation** {#3.0-installation-&-data-preparation}
 
@@ -189,6 +202,8 @@ SPL 1: Validate BOTSv3 data availability (full time range)
 
 ![][image6]  
 Fig 5\. Screenshot of validating the BOTSv3 data availability
+
+---
 
 # **4.0 Investigation** {#4.0-investigation}
 
