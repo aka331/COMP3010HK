@@ -1,7 +1,10 @@
-# COMP3010HK Security Operations and Incident Management 2025/2026
-## Coursework 2: BOTSv3 Incident Analysis and Presentation
+# COMP3010HK (CW2) — BOTSv3 Incident Analysis (Splunk)
 
-**Github repo:** https://github.com/aka331/COMP3010HK/tree/main/CW2
+> **Module:** COMP3010HK Security Operations & Incident Management  
+> **Coursework:** CW2 (BOTSv3 Incident Analysis + Presentation)  
+> **Dataset:** Boss of the SOC v3 (BOTSv3)  
+> **Tooling:** Splunk Enterprise on Ubuntu VM  
+> **Video (≤10 mins):** [YouTube link here]  
 
 ---
 
