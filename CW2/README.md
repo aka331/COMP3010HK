@@ -92,6 +92,8 @@ index=botsv3 earliest=0
 
 ### 4.2 Evidence + SPL (per question)
 
+---
+
 **Q1) IAM users who accessed AWS services**
 
 Objective: Enumerate IAM usernames observed in CloudTrail (successful/unsuccessful).
@@ -105,6 +107,8 @@ Result: ```bstoll, btun, splunk_access, web_admin```
 
 Evidence: screenshot of SPL + stats table.
 
+---
+
 **Q2) Field to alert on AWS API activity without MFA (exclude console logins)**
 
 Objective: Determine the best JSON path for MFA state relevant to API session usage.
@@ -115,4 +119,28 @@ index=botsv3 earliest=0 sourcetype=aws:cloudtrail
 ```
 
 Chosen field: ```userIdentity.sessionContext.attributes.mfaAuthenticated```
+
 Rationale: reflects whether the session credentials were MFA-authenticated for API calls (more reliable than console-login-only fields).
+
+Evidence: screenshot showing the field in events.
+
+---
+
+**Q3) Processor number used on web servers**
+
+Objective: Identify the CPU model from the hardware logs.
+
+```sql
+index=botsv3 earliest=0 sourcetype=hardware
+```
+
+Result: ```E5-2676```
+
+Evidence: screenshot showing the CPU string/field.
+
+---
+
+**Q4) Event ID of PutBucketAcl call enabling public access**
+
+Objective: Find the CloudTrail event that changed bucket ACL to public.
+
