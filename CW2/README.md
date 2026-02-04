@@ -8,9 +8,8 @@
 > **Tooling:** Splunk Enterprise on Ubuntu VM  
 > **Video (≤10 mins):** [YouTube link here]  
 
----
 
-**Table of Contents**
+## Table of Contents
 
 [**1.0 Introduction	2**](#1.0-introduction)
 
@@ -64,9 +63,7 @@
 
 [6.0 Reference	25](#6.0-reference)
 
-# 
 
----
 
 # **1.0 Introduction** {#1.0-introduction}
 
