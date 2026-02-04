@@ -92,4 +92,27 @@ index=botsv3 earliest=0
 
 ### 4.2 Evidence + SPL (per question)
 
+**Q1) IAM users who accessed AWS services**
 
+Objective: Enumerate IAM usernames observed in CloudTrail (successful/unsuccessful).
+
+```sql
+index=botsv3 earliest=0 sourcetype=aws:cloudtrail
+| stats count by userIdentity.userName
+```
+
+Result: ```bstoll, btun, splunk_access, web_admin```
+
+Evidence: screenshot of SPL + stats table.
+
+**Q2) Field to alert on AWS API activity without MFA (exclude console logins)**
+
+Objective: Determine the best JSON path for MFA state relevant to API session usage.
+
+```sql
+index=botsv3 earliest=0 sourcetype=aws:cloudtrail
+| regex "MFA"
+```
+
+Chosen field: ```userIdentity.sessionContext.attributes.mfaAuthenticated```
+Rationale: reflects whether the session credentials were MFA-authenticated for API calls (more reliable than console-login-only fields).
