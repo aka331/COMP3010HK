@@ -363,7 +363,11 @@ Key Recommendations:
 
 1. Cloudflare. (n.d.). What is a security operations center (SOC)? [https://www.cloudflare.com/zh-tw/learning/security/glossary/what-is-a-security-operations-center-soc/](https://www.cloudflare.com/zh-tw/learning/security/glossary/what-is-a-security-operations-center-soc/) 
 
-2. Tutorialspoint. (n.d.). Splunk \- Search Processing Language. Retrieved December 24, 2025, from [https://www.tutorialspoint.com/splunk/splunk\_search\_language.htm](https://www.tutorialspoint.com/splunk/splunk_search_language.htm) 
+2. Tutorialspoint. (n.d.). Splunk \- Search Processing Language. Retrieved December 24, 2025, from [https://www.tutorialspoint.com/splunk/splunk\_search\_language.htm](https://www.tutorialspoint.com/splunk/splunk_search_language.htm)
+
+3. National Institute of Standards and Technology (NIST). (2012). Computer security incident handling guide (SP 800-61 Rev. 2). [https://csrc.nist.gov/publications/detail/sp/800-61/rev-2/final](https://csrc.nist.gov/publications/detail/sp/800-61/rev-2/final)
+4. 
+5. Splunk. (n.d.). Botsv3: Boss of the SOC dataset (Version 3). GitHub. Retrieved February 13, 2026, from [https://github.com/splunk/botsv3](https://github.com/splunk/botsv3)
 
 **Student Declaration of AI Tool use in this Assessment**
 
