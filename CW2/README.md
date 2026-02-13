@@ -82,10 +82,10 @@ Previous incident response life cycle model
 
 | Phase (NIST Phase) | Apply to the BOTSv3 Investigation |
 | :---- | :---- |
-| Prevention (Preparation) |  |
-| Detection (Detection and Analysis) |  |
-| Response (Containment) |  |
-| Recovery (Eradication and Recovery) |  |
+| Prevention (Preparation) | During the preparation phase, SOC ensures that appropriate logging, monitoring, and access control mechanisms are in place before an incident. In the context of the BOTSv3 scenario, appropriate logging is ensured via Cloudtrail, Splunk dashboards, IAM role policy, MFA, and asset inventories. Baseline configuration of bucket permissions for S3 and hardening of the endpoint could have avoided the public ACL misconfiguration. |
+| Detection (Detection and Analysis) | Suspicious events are identified and validated during detection and analysis. In BOTSv3, this ranged from detecting abnormal PutBucketAcl events to identifying API calls performed without MFA and also observing unusual endpoint behavior, such as BSTOLL-L running Windows 10 Enterprise. For determining if the activity was malicious and the extent of it, IAM activity, CloudTrail logs, and endpoint telemetry were correlated using Splunk SPL queries. |
+| Response (Containment) | Containment actions are designed to limit the effects of an attack well and prevent further exploitation. In the case of BOTSv3, this would involve immediately reverting the S3 bucket ACL to private, disabling or rotating compromised IAM credentials, enforcing MFA policies, and isolating the affected endpoint BSTOLL-L. Rapid containment reduces Time-to-Contain (TTC), minimizing data exposure risk. |
+| Recovery (Eradication and Recovery) | During the recovery phase, the organization restores systems back to a secure end-state. For BOTSv3, that means verifying that the S3 bucket is no longer publicly accessible, along with IAM policy integrity, scanning endpoints for persistence mechanisms, and confirming no further unauthorized uploads have taken place. Lessons learned are then implemented as improved detection rules and hardened configurations to prevent reoccurrences. |
 
 # 
 
