@@ -6,7 +6,7 @@
 > **Coursework:** CW2 (BOTSv3 Incident Analysis + Presentation)  
 > **Dataset:** Boss of the SOC v3 (BOTSv3)  
 > **Tooling:** Splunk Enterprise on Ubuntu VM  
-> **Video (≤10 mins):** [YouTube link here]  
+> **Video (≤10 mins):** [[YouTube link here](https://www.youtube.com/watch?v=Knpgs-4_tVI)]  
 
 ---
 
